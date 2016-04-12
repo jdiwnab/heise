@@ -65,7 +65,7 @@
 
 
 // main.scss
-$field-width: 400px;
+$field-width: 450px;
 $grid-spacing: 10px;
 $grid-row-cells: 8;
 $tile-size: ($field-width - $grid-spacing * ($grid-row-cells + 1)) / $grid-row-cells;
@@ -107,7 +107,7 @@ h1.title {
   font-weight: bold;
   margin: 0;
   display: block;
-  //float: left;
+  float: left;
 }
 
 .material-icons {
@@ -457,6 +457,8 @@ hr {
 
   h1.title {
     font-size: 50px;
+    display: inline-block;
+    width: 50%;
   }
 
   .container {
