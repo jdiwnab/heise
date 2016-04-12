@@ -1,0 +1,164 @@
+<html>
+  <head>
+    <!--<script type="text/javascript" src="http://hammerjs.github.io/dist/hammer.min.js"></script>-->
+    <script type="text/javascript" src="heise.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Hei Su Hung Su</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1 class="title">Hei Se Hong Se</h1>
+        <div class="scores">
+          <div class="score-container">0</div>
+        </div>
+      </div>
+
+      <div class="game-container">
+        <div class="game-message">
+          <p></p>
+          <div class="lower">
+            <a class="retry-button">Try again</a>
+          </div>
+        </div>
+
+
+        <div class="grid-container">
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('up', 0);">
+              <i class="material-icons md-36">keyboard_arrow_up</i>
+            </div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('up', 1);">
+              <i class="material-icons md-36">keyboard_arrow_up</i>
+            </div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('up', 2);">
+              <i class="material-icons md-36">keyboard_arrow_up</i>
+            </div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('up', 3);">
+              <i class="material-icons md-36">keyboard_arrow_up</i>
+            </div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('up', 4);">
+              <i class="material-icons md-36">keyboard_arrow_up</i>
+            </div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('up', 5);">
+              <i class="material-icons md-36">keyboard_arrow_up</i>
+            </div>
+            <div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('left', 0);">
+              <i class="material-icons md-36">keyboard_arrow_left</i>
+            </div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('right', 0);">
+              <i class="material-icons md-36">keyboard_arrow_right</i>
+            </div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('left', 1);">
+              <i class="material-icons md-36">keyboard_arrow_left</i>
+            </div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('right', 1);">
+              <i class="material-icons md-36">keyboard_arrow_right</i>
+            </div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('left', 2);">
+              <i class="material-icons md-36">keyboard_arrow_left</i>
+            </div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('right', 2);">
+              <i class="material-icons md-36">keyboard_arrow_right</i>
+            </div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('left', 3);">
+              <i class="material-icons md-36">keyboard_arrow_left</i>
+            </div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('right', 3);">
+              <i class="material-icons md-36">keyboard_arrow_right</i>
+            </div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('left', 4);">
+              <i class="material-icons md-36">keyboard_arrow_left</i>
+            </div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('right', 4);">
+              <i class="material-icons md-36">keyboard_arrow_right</i>
+            </div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('left', 5);">
+              <i class="material-icons md-36">keyboard_arrow_left</i>
+            </div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('right', 5);">
+              <i class="material-icons md-36">keyboard_arrow_right</i>
+            </div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('down', 0);">
+              <i class="material-icons md-36">keyboard_arrow_down</i>
+            </div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('down', 1);">
+              <i class="material-icons md-36">keyboard_arrow_down</i>
+            </div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('down', 2);">
+              <i class="material-icons md-36">keyboard_arrow_down</i>
+            </div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('down', 3);">
+              <i class="material-icons md-36">keyboard_arrow_down</i>
+            </div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('down', 4);">
+              <i class="material-icons md-36">keyboard_arrow_down</i>
+            </div>
+            <div class="grid-cell grid-button" onclick="manager.inputManager.move('down', 5);">
+              <i class="material-icons md-36">keyboard_arrow_down</i>
+            </div>
+            <div class="grid-cell"></div>
+          </div>
+        </div>
+
+        <div class="tile-container">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
